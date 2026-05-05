@@ -1,0 +1,93 @@
+<head>
+<link rel="img" href="img.html">
+<style>
+.wrapped{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+  
+.box{
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  background: white;
+  text-align: center;
+transition: all 0.3s ease;
+}
+.box::before,
+.box::after {
+  center:"";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #007bff;
+
+}
+
+.box::before{
+  bottom:0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.box::after{
+  top:0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+
+}
+
+.coner{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #007bff;
+
+}
+
+.top-right{
+  top:0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-left{
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+
+
+</style>
+</head>
+
+<body>
+  <div class="wrapped">
+  <div class="box">
+<img class="minepro" src="img.html/minepro-1.jpg">
+  
+<h1>GitHub for beginners on YouTube</h1>
+<p class="discription">
+  Designed to help you master the basics of GitHub, 
+  whether you're new to coding or looking to enhance 
+  your version control skills.
+</p>
+</div>
+</div>
+
+<div class="box">
+  <span class="coner top-right"></span>
+  <span class="coner botton-left"></span>
+  <h2>MINEPRO TUTORIA CENTER</h2>
+  <p>Dig Deeper, Learn Smarter, Mine Better</p>
+</div>
+</body>
